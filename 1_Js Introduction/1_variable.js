@@ -75,7 +75,7 @@
 // }
 // console.log(a)//error aayega ---- a is not defined
 
-const a = 2
+const a = 2 // const has to be initialised
 console.log(a)
 
 a=true
