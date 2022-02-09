@@ -48,7 +48,7 @@
 
 // for(var i=0 ; i*i <=num ; i++){
 //     if(num%i ==0){
-//         falg=false
+//         flag=false
 //         break;
 //     }
 // }
