@@ -277,3 +277,87 @@ else console.log("None wins")
 
 
 
+// #################################################################################
+
+// SWITCH CASE STATEMENT
+
+const day = 'monday';
+
+switch(day){
+   case 'monday': // This statement is ===> day===monday ===> strict equality
+      console.log("It's monday");
+      break;
+   case 'tuesday':
+      console.log("It's tuesday");
+      break;
+   case 'wednesday':
+   case 'thursday':
+      console.log("I'm confused");
+      break;
+   case 'friday':
+      console.log("It's friday");
+      break;
+   case 'saturday':
+   case 'sunday':
+      console.log("It was supposed to be a weekend");
+   default:
+      console.log("Enter something valid");
+}
+
+
+if(day==='monday'){
+   console.log("It's monday");
+}
+else if(day==='tuesday'){
+   console.log("It's tuesday");
+}
+else if(day==='wednesday' || day==='thursday'){
+   console.log("I'm confused");
+}
+else if(day==='friday'){
+   console.log("It's friday");
+}
+else if(day==='saturday' || day==='sunday'){
+   console.log("It was supposed to be a weekend");
+}
+else {
+   console.log("Enter something valid");
+}
+
+// Both the switch statements and if-else statements are equivalent
+
+// What is Statement and What is expression ??
+// Expressions are statement that produce values or has value 
+2*4 // An expression whose value is 8
+1991 // Though it does not have any operation but it has a value
+true && false && !true // Holds a boolean value
+
+// In template literals javascript only expect expressions
+let naam="Jonas";
+let ageme = 29;
+console.log(`I'm ${naam} and I am ${ageme} years old !`); // Both variables are holding values that is expressions
+
+// TERNARY OPERATOR
+const agep = 18;
+agep>=18?console.log("I am adult"):console.log("I am young");
+const passport = agep>=18?"Adult":"Young";
+console.log(passport);
+//Ternary operator produces values ==>it is basically a replcaement of if-else for small block of codes
+
+////////////////////////////////////
+// Coding Challenge #4
+
+/*
+Steven wants to build a very simple tip calculator for whenever he goes eating in a resturant. In his country, it's usual to tip 15% if the bill value is between 50 and 300. If the value is different, the tip is 20%.
+1. Your task is to caluclate the tip, depending on the bill value. Create a variable called 'tip' for this. It's not allowed to use an if/else statement 😅 (If it's easier for you, you can start with an if/else statement, and then try to convert it to a ternary operator!)
+2. Print a string to the console containing the bill value, the tip, and the final value (bill + tip). Example: 'The bill was 275, the tip was 41.25, and the total value 316.25'
+TEST DATA: Test for bill values 275, 40 and 430
+HINT: To calculate 20% of a value, simply multiply it by 20/100 = 0.2
+HINT: Value X is between 50 and 300, if it's >= 50 && <= 300 😉
+GOOD LUCK 😀
+*/
+
+// const bil = 275;
+const bil = 430;
+const tipp = bil>=50 && bil<=300 ? bil*0.15 : bil*0.2;
+console.log(`The bill was ${bil}, the tip was ${tipp}, and the total value ${bil+tipp}`);
