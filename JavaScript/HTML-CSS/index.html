@@ -1,0 +1,56 @@
+<!DOCTYPE html> <!-- What type of file is this ? HTML-->
+<html lang="en"> <!-- What language we use ? English-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<style src="style.css"></style> This will not work instead-->
+    <link href="style.css" rel="stylesheet"/>
+    <title>Learning HTML & CSS</title>
+</head>
+<body>
+    <h1 class="heading1">JavaScript is so fun</h1>
+    <p>We can learn JavaScript without HTML and CSS but for DOM manipulation we need HTML and CSS (it's useful)</p>
+    Learn more about this here <a href = "https://www.udemy.com/course/the-complete-javascript-course/">on Udemy</a>
+
+    <!-- What are attributes ==> These are properties that describe an element href describes a-->
+    <h6 class="heading2">Another heading</h6>
+    <p>Just another paragraph</p>
+
+    <img src = "https://img-c.udemycdn.com/user/200_H/7799204_2091_5.jpg"/>
+
+    <!-- We can group or identify elements in two ways ===> 1. class 2. id 
+         So what is difference between class and id 
+         Class is not necessarily unique but id is used to uniquely identified elements -->
+
+    <br><br>
+    <form id = "your-name">
+    
+        Enter your name here
+        <br><br>
+        <input type="text" placeholder="Your name plz"/>
+        <button type="submit">OK</button>
+    </form>
+    
+         
+
+<!--
+                    NOTE ON BOX MODEL OF CSS
+                    So what do we have ==> Every element on the web can be assumed to a box 
+                    Box{
+                        =>margin(is outside the box) ------- this is basically the space between different boxes
+
+                        These are inside the box
+                        =>border=>padding=>content(width and height)
+                    }
+
+
+                    There are some already predefined property values to each elements
+                    So for selecting everything we use 
+                    *{
+                        and then here we inialize everything to zero
+                    }
+
+-->  
+</body>
+</html>
