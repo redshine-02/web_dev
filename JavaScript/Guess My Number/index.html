@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><!--**************************************************       HEAD         **********************************************************************************-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Guess My Number!</title>
+  </head><!--Title only-->
+  <body> <!--**************************************************       BODY         **********************************************************************************-->
+    <header>
+      <h1>Guess My Number!</h1>
+      <p class="between">(Between 1 and 20)</p>
+      <button class="btn again">Again!</button>
+      <div class="number">?</div>
+    </header><!--heading1 , paragraph(between) , button(btn again) , division(number)-->
+    <main>
+      <section class="left">
+        <input type="number" class="guess" />
+        <button class="btn check">Check!</button>
+      </section>
+      <section class="right">
+        <p class="message">Start guessing...</p>
+        <p class="label-score">💯 Score: <span class="score">20</span></p>
+        <p class="label-highscore">
+          🥇 Highscore: <span class="highscore">0</span>
+        </p>
+      </section>
+    </main><!--Two sections 
+            1. 1st Section(left) ==> input(guess) and button(btn check)
+            2. 2nd Section(right) ==> 3 paragraph 1st p = message 2nd p = label-score 3rd p = label-highscore-->
+    <script src="script.js"></script>
+  </body>
+</html>
